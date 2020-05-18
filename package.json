@@ -1,0 +1,22 @@
+{
+  "name": "small_node_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concat-stream": "^2.0.0",
+    "https": "^1.0.0",
+    "jquery": "^3.5.0",
+    "ngraph.fromjson": "^2.0.0",
+    "ngraph.graph": "^19.1.0",
+    "ngraph.path": "^1.3.1",
+    "ngraph.pixel": "^2.4.1",
+    "node-html-parser": "^1.2.16",
+    "xml-js": "^1.6.11"
+  }
+}
