@@ -1,26 +1,29 @@
 ## Howto make a graph
 
 ### Ngraph
-[ngraph](https://github.com/anvaka/ngraph)
-[ngraph.pixel](https://github.com/anvaka/ngraph.pixel)
+We use the following libraries
+
+* [ngraph](https://github.com/anvaka/ngraph)
+* [ngraph.pixel](https://github.com/anvaka/ngraph.pixel)
 
 
-### How Node.js and npm work...
+### Node.js and npm
 
-installing libraries with npm --save nameoflibrary
+Node.js and npm (node package manager) work together in managing the node.js javascript libraries. Installing libraries is accomplished with `npm --save nameoflibrary`. This install the libraries in the node_modules directory and updates the package.json file of your own package.
 
-[howto](https://support.glitch.com/t/how-can-i-use-npm-packages-in-html-code/12699/9
+[Howto use npm package in html code](https://support.glitch.com/t/how-can-i-use-npm-packages-in-html-code/12699/9
 )
 
-with npm install -g watchify, watch version of browserify.
-to bundle your node_modules and incorporate node.js automatically.
+Use `npm install -g watchify` to install the "watch"  version of browserify (which bundles all package into bundle.js) to automatically update your bundle.js when changes occur in your code.
 
 Have an index.js (e.g.) to store your code.
-`watchify index.js -o bundle.js` to automatically update your bundle.js.
+`watchify index.js -o bundle.js`.
 
+Then in your html:
  `<script src="bundle.js"></script>`
 
-
+### Collecting the xml
+Uses the https package dependency to obtain the xml, jsonifies it. Then use jquery (easy to add with npm using `var $ = require('jquery');` to go through the DOM, since we post our WOTDs in a list format. 
 
 
 
